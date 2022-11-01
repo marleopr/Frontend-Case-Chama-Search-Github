@@ -1,6 +1,5 @@
-# `Projeto Case site de filmes populares Promobit`
-Case Frontend Filmes Populares de Promobit
-
+# `Case Frontend empresa Chama - Site de buscar usuários do Github`
+CASE EM CONSTRUÇÃO
 # `Link`
 https://filmes-marleo.surge.sh
 
