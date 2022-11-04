@@ -43,13 +43,13 @@ export const ButtonBack = styled.button`
   width: 85px;
   margin: 0 5px 0 0;
   text-align: center;
-  color: white;
+  color: #000000;
   border: none;
   border-radius: 5px;
-  background-color: #368ce7;
+  background-color: #ffffff;
   &:hover {
     cursor: pointer;
-    background-color: blue;
+    background-color: #e9e9e9;
     transform: scale(1.02);
     transition: transform .2s;
   }

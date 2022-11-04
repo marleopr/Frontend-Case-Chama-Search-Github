@@ -54,6 +54,10 @@ export const InputSearch = styled.input`
     border: solid 1px gray;
     outline: 0;
   }
+
+  img{
+    width: 16px;
+  }
 `
 
 export const Buttons = styled.div`
@@ -71,14 +75,13 @@ export const ButtonHistoric = styled.button`
   width: 100px;
   margin: 0 5px 0 0;
   text-align: center;
-  color: white;
+  color: #000000;
   border: none;
   border-radius: 5px;
-  background-color: #368ce7;
+  background-color: #ffffff;
   &:hover {
     cursor: pointer;
-    box-shadow: 0px 0px 30px 1px blue;
-    background-color: blue;
+    background-color: #e9e9e9;
     transform: scale(1.02);
     transition: transform .2s;
   }
@@ -90,14 +93,13 @@ export const ButtonSearch = styled.button`
   width: 100px;
   margin: 0 0 0 5px;
   text-align: center;
-  color: white;
-  background-color: #23cf5c;
+  color: #000000;
+  background-color: #ffffff;
   border: none;
   border-radius: 5px;
   &:hover {
     cursor: pointer;
-    box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
-    background-color: green;
+    background-color: #e9e9e9;
     transform: scale(1.02);
     transition: transform .2s;
   }
