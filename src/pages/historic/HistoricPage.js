@@ -5,7 +5,9 @@ import { goToHomePage } from "../../routes/coordinator"
 import * as s from "./styled"
 import githubImg from "../../assets/img/githubLogo.png"
 import githubFooter from "../../assets/img/githubLogoFooter.png"
-
+import searchEmpty from "../../assets/img/favicon.ico"
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 export default function HistoricPage() {
     const navigate = useNavigate()
 
@@ -23,6 +25,16 @@ export default function HistoricPage() {
     const clearHistoric = () => {
         localStorage.setItem('listaProfiles', JSON.stringify([]));
         getHistoric();
+        toast.info('Histórico limpo!', {
+            position: "top-right",
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+        });
     }
 
     const getProfile = (number) => {
@@ -58,10 +70,12 @@ export default function HistoricPage() {
                     searchesList.length > 0 ?
                         <s.List empty={searchesList.length > 0}> {searchesList} </s.List>
                         :
-                        <s.List empty={searchesList.length > 0}> <h2>Histórico vazio!</h2> </s.List>
+                        // <s.List empty={searchesList.length > 0}> <h2>Histórico vazio!</h2> </s.List>
+                        <s.List empty={searchesList.length > 0} > <img src={searchEmpty} /> </s.List>
                 }
                 <s.Buttons>
                     <s.ButtonBack onClick={() => goToHomePage(navigate)}> Voltar </s.ButtonBack>
+                    <ToastContainer />
                     <s.ButtonClear onClick={clearHistoric}> Limpar Histórico </s.ButtonClear>
                 </s.Buttons>
             </s.BoxSearch>
