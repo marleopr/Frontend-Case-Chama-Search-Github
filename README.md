@@ -1,7 +1,7 @@
 # `Case Frontend empresa Chama - Site de buscar usuários do Github`
 
 # `Link`
-https://github-marleo.surge.sh
+https://github-marleo.vercel.app
 
 
 # `Descrição`
