@@ -1,15 +1,15 @@
 # `Case Frontend empresa Chama - Site de buscar usuários do Github`
-CASE EM CONSTRUÇÃO
+
 # `Link`
-https://filmes-marleo.surge.sh
+https://github-marleo.surge.sh
 
 
 # `Descrição`
-O Projeto filmes populares Promobit foi desenvolvido como uma atividade dentro do curso Full-Stack Web Developer da Labenu, o qual consiste em requisições (via axios) para a themoviedb, que é uma API pública* com informações relacionadas a filmes e séries.
+O Projeto Buscador de usuários do github ChamaTheApp foi desenvolvido como uma atividade para o meu desenvolvimento pós curso Full-Stack Web Developer da Labenu, o qual consiste em requisições (via axios) para a API oficial do Github, que é uma API pública* com informações relacionadas aos usuários do Github.
 
-*a API pode ser encontrada [aqui](https://www.themoviedb.org/)
+*a API pode ser encontrada [aqui](https://docs.github.com/en/rest/overview/endpoints-available-for-github-apps#users)
 </br>
-O repositório do projeto pode ser encontrado [aqui](https://github.com/future4code/alves-Marleo-Rosa/pull/69)
+O repositório do projeto pode ser encontrado [aqui](https://github.com/marleopr/Frontend-Case-Chama-Search-Github)
 
 
 # `Instalando e rodando o projeto`
@@ -41,7 +41,7 @@ Márleo Piber da Rosa.
 # `Imagens`
 ### Página Home
 <img src="src\assets\img\HomePage1.png"/>
+### Página resultado da pesquisa
 <img src="src\assets\img\HomePage2.png"/>
-### Página Detalhes
+### Página histórico
 <img src="src\assets\img\DetalhesPage1.png"/>
-<img src="src\assets\img\DetalhesPage2.png"/>

@@ -37,7 +37,6 @@ export default function HomePage() {
                     localStorage.setItem('listaProfiles', JSON.stringify(listaProfiles))
                     setSearchProfile("")
                     toast.success('Buscando perfil...')
-                    console.log(res.data)
                 })
                 .catch((error) => {
                     const errorCode = error.response.status

@@ -80,6 +80,9 @@ export const List = styled.div`
   padding: 0 5px 0 0;
   overflow: auto;
   overflow-x: hidden;
+  img{
+    width: 120px;
+  }
 `
 
 export const Buttons = styled.div`
