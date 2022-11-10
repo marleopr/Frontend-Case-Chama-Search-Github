@@ -18,6 +18,12 @@ export const Image = styled.img`
   width: 250px;
   height: 250px;
   border-radius: 50%;
+  &:hover {
+    cursor: pointer;
+    background-color: #e9e9e9;
+    transform: scale(1.03);
+    transition: transform .2s;
+  }
 `
 
 export const ProfileData = styled.div`

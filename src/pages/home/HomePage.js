@@ -125,7 +125,7 @@ export default function HomePage() {
                 }
             </s.BoxSearch>
             <s.Footer>
-                <s.LogoFooter src={githubFooter}></s.LogoFooter>
+                <a a href="https://github.com/marleopr" target="_blank"><s.LogoFooter src={githubFooter}></s.LogoFooter></a>
             </s.Footer>
         </s.Body>
     )

@@ -53,7 +53,12 @@ export default function HistoricPage() {
         .map((profile, index) => {
             return (
                 <s.SearchInfo onClick={() => getProfile(index)} value={index} key={index}>
-                    <s.SearchName> {profile.login} </s.SearchName>
+                    {/* <s.SearchName> {profile.login} </s.SearchName> */}
+                    <s.SearchName>
+                        <a href={profile.html_url} target="_blank"><s.SearchNameImg src={profile.avatar_url} /></a>
+                        {profile.login}
+                    </s.SearchName>
+                    {/* <a href={profile.html_url}><s.SearchName src={profile.avatar_url} /></a> */}
                 </s.SearchInfo>
             )
         })
@@ -80,7 +85,7 @@ export default function HistoricPage() {
                 </s.Buttons>
             </s.BoxSearch>
             <s.Footer>
-                <s.LogoFooter src={githubFooter}></s.LogoFooter>
+                <a a href="https://github.com/marleopr" target="_blank"><s.LogoFooter src={githubFooter}></s.LogoFooter></a>
             </s.Footer>
         </s.Body>
     )

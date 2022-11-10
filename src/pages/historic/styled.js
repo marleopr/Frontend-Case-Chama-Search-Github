@@ -47,29 +47,49 @@ export const SearchInfo = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  text-align: center;
   width: 100%;
   font-size: 14px;
   border-radius: 5px;
   margin: 5px 0;
   background-color: ${props => props.status === true && props.value === props.id ? "orange" : "#ffffff"};
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+  cursor: default;
 `
 
 export const SearchName = styled.div`
   display: flex;
+  flex-direction: row;
   font-size: 16px;
   padding: 5px;
   flex: 1 0 30%;
   overflow-wrap: break-word;
   word-wrap: break-word;
   word-break: break-word;
+  align-items: center;
+  /* text-align: center; */
+
+  /* text-decoration: none; */
+
+  /* img{
+   max-width: 50px;
+  } */
+
   &:hover {
-    cursor: pointer;
+    /* cursor: pointer; */
     background-color: #e9e9e9;
     transform: scale(1.01);
     transition: transform .2s;
     border-radius: 5px;
   }
 `
+export const SearchNameImg = styled.img`
+  max-width: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+  cursor: pointer;
+`
+
 export const List = styled.div`
   display: flex;
   flex-direction: column;
